@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "b0ca0720-1083-42a0-a031-07ad1476023c",
+		"name": "CrudApi",
+		"description": "Crud Api ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"type\":\"show\",\n\"book_id\":4\n}"
+				},
+				"url": {
+					"raw": "http://localhost/crudapi/book.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"crudapi",
+						"book.php"
+					]
+				},
+				"description": "Show All books"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"type\":\"insert\",\n\"isbn\":\"ss\",\"title\":\"ss\",\"author\":\"sssd\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/crudapi/book.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"crudapi",
+						"book.php"
+					]
+				},
+				"description": "Adding New Book"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"type\":\"update\",\n\"book_id\":4,\"isbn\":\"ss\",\"title\":\"ss\",\"author\":\"sssd\",\"release_date\":\"2021-09-09\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/crudapi/book.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"crudapi",
+						"book.php"
+					]
+				},
+				"description": "Update Book"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"type\":\"delete\",\n\"book_id\":5\n}"
+				},
+				"url": {
+					"raw": "http://localhost/crudapi/book.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"crudapi",
+						"book.php"
+					]
+				},
+				"description": "Delete Book"
+			},
+			"response": []
+		}
+	]
+}

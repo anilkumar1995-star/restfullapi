@@ -1,0 +1,63 @@
+Crud Restfull Api
+
+For Local Hosting 
+
+                                Folder Name is crudapi
+
+    Access Url
+    http://localhost/crudapi/book.php
+
+    It's Support Json Format 
+
+1) Add Books
+
+	For Adding new books
+	Require Fields are 
+	type,isbn,title,author
+	and
+	release_date Date Format Validation is YYYY-MM-DD
+
+	{
+	"type":"insert","isbn":"KKS","title":"sjsj","author":"kdk","release_date":"2021-09-09"
+	}
+
+2) Show Books
+
+	For Showing  books
+	Require Fields are 
+	type
+
+	book_id is not required
+
+	{
+	"type":"show","book_id":1
+	}
+
+3) Update Books
+
+	For Updating  book
+	Require Fields are 
+	type,isbn,title,author
+	and
+	release_date Date Format Validation is YYYY-MM-DD
+
+	{
+	"type":"update","isbn":"KKS","title":"sjsj","author":"kdk","release_date":"2021-09-09","book_id":1
+	}
+
+4) Delete Books
+
+	For Deleting  books
+	Require Fields are 
+	type
+
+	book_id is  required
+
+	{
+	"type":"delete","book_id":1
+	}
+
+	We Also Provide Postman collection for api
+	
+	thank you for 
+
